@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+double calculateBonus(double salary, int years){
+    int bonus;
+
+    if(years< 2){
+        return bonus = 0;
+    }
+    else if(years >= 2 && years <= 5){
+        return bonus = salary * 0.05;
+    }
+    else if(years >= 6 && years <= 10){
+        return bonus = salary * 0.10;
+    }
+    else{
+        return bonus = salary * 0.15;
+    }
+}
+int main(){
+    double salary = 80000.0;
+    int years = 7;
+    double bonusAmount = calculateBonus(salary, years);
+    cout<< "Salary: Rs." << salary << endl;
+    cout<< "Years of Service: " << years << endl;
+    cout<< "Bonus: Rs." << bonusAmount << endl;
+
+    return 0;
+}
